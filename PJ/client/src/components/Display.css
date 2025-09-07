@@ -1,0 +1,49 @@
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: 350px;
+  margin: 10px;
+}
+
+.image-list img {
+  width: 250px;
+  height: 350px;
+}
+.center {
+  margin: 40px;
+}
+
+.button {
+  background-color: black; /* Change from blue to black */
+  background-image: none; /* Remove gradient */
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  text-align: center; /* Ensure text is centered */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for color and size */
+}
+
+.button:hover {
+  background-color: green; /* Change to green on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+  box-shadow: rgba(152, 250, 160, 0.5) 0 3px 8px;
+}
+
+.address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+}

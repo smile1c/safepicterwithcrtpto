@@ -1,0 +1,114 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* เริ่มจากด้านบน */
+  left: 0;
+  top: 50%; /* เริ่มครึ่งจอจากด้านบน */
+  transform: translateY(-50%); /* ปรับโมดอลให้อยู่ครึ่งล่าง */
+  
+  
+}
+
+.modalContainer {
+  width: 500px;
+  height: 250px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer {
+  display: inline-block;
+  text-align: center;
+}
+
+.title {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: 'Arial', sans-serif; /* Using Arial as an example */
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 1px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalContainer .footer button:hover {
+  background-color: #0056b3; /* สีพื้นหลังที่เข้มขึ้นเมื่อ hover */
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+#cancelBtn:hover {
+  background-color: rgb(148, 7, 35);
+}
+
+.address {
+  background-color: #f0f0f0; /* สีพื้นหลัง */
+  border: 2px solid #ccc; /* สีขอบ */
+  color: #333; /* สีข้อความ */
+  padding: 10px; /* ระยะห่างภายใน */
+  border-radius: 5px; /* มุมโค้ง */
+  font-size: 16px; /* ขนาดตัวอักษร */
+}
+.address:focus {
+  background-color: #fff; /* เปลี่ยนสีพื้นหลังเมื่อช่อง input ถูกเลือก */
+  border-color: #007bff; /* เปลี่ยนสีขอบเมื่อช่อง input ถูกเลือก */
+  outline: none; /* ลบเส้นขอบด้านนอกที่แสดงเมื่อมีการคลิก */
+}
+
+input[type="text"]:focus {
+  background-color: rgb(228, 247, 255);
+}
+
+.body{
+  margin-bottom: 30px;
+}

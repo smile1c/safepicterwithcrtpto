@@ -1,0 +1,54 @@
+.top {
+  margin: 40px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.choose {
+  background-color: rgba(90, 255, 21, 0.3); /* จางในสถานะปกติ */
+  background-image: linear-gradient(-180deg, rgba(90, 255, 21, 0.3), rgba(90, 255, 21, 0.3)); /* ทำให้พื้นหลังจาง */
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition */
+}
+
+.choose:hover {
+  background-color: rgba(90, 255, 21, 1); /* ทำให้สีเข้มขึ้นเมื่อ hover */
+  box-shadow: rgba(9, 255, 0, 0.7) 0 3px 8px; /* เพิ่มเงาที่เข้มขึ้น */
+}
+
+.textArea {
+  color: white;
+}
+
+.upload {
+  border: 1px solid #13aa52;
+  background-color: #13aa52;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.upload:hover {
+  border: 1px solid #13aa52;
+  background-color: #a5efc1;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.upload:disabled,
+.upload[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+div {
+  padding: 5px 10px;
+}
